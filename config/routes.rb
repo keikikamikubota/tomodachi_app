@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :feeds do
+  resources :pictures
+  resources :pictures do
     collection do
       post :confirm
     end
