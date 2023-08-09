@@ -1,7 +1,7 @@
 <%= form_with(model: picture, local: true, url: choose_new_or_edit) do |form| %>
-  <div class="picture_content">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
+  <div class="picture_text">
+    <%= form.label :text %>
+    <%= form.text_field :text %>
   </div>
   <div class="field">
     <%= form.label :image %>
