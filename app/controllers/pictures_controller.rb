@@ -31,7 +31,7 @@ class PicturesController < ApplicationController
     else
       if @picture.save
         redirect_to pictures_path, notice: "投稿が完了しました！"
-      else 
+      else
         render :new
       end
     end
@@ -54,7 +54,7 @@ class PicturesController < ApplicationController
 
   private
 
-    def picture_params
+  def picture_params
       params.require(:picture).permit(:user_id, :image, :text, :image_cache)
-    end
+  end
 end
