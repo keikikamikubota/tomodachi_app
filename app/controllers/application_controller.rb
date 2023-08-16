@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
-  before_action :login_required, only: [:new, :create, :show, :index]
+  before_action :login_required, only: [:new, :create, :show, :index,]
 
   private
 
